@@ -96,7 +96,7 @@ export class AppComponent {
     // Overpass API query
     const overpassQuery = `
   [out:json];
-  node["amenity"="${this.selectedType}"](around:5000,${this.userLat},${this.userLng});
+  node["amenity"="${this.selectedType}"](around:3000,${this.userLat},${this.userLng});
   out;
 `;
     const url = `https://overpass-api.de/api/interpreter?data=${encodeURIComponent(
